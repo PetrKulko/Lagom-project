@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Студия дизайна продукции из дерева">
+    <title>LAGOM</title>
+    <link rel="shortcut icon" href="images/mini-logo.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a class="header__logo-link" href="#">
+                        <img class="header__logo-img" src="images/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav-lists">
+                        <li class="header__nav-list">
+                            <a class="header__nav-list-link" href="#">Главная</a>
+                        </li>
+                        <li class="header__nav-list">
+                            <a class="header__nav-list-link" href="#about">О нас</a>
+                        </li>
+                        <li class="header__nav-list">
+                            <a class="header__nav-list-link" href="#work">Наша работа</a>
+                        </li>
+                        <li class="header__nav-list">
+                            <a class="header__nav-list-link" href="#categories">Категории</a>
+                        </li>
+                        <li class="header__nav-list">
+                            <a class="header__nav-list-link" href="#test">Отзывы</a>
+                        </li>
+                    </ul>
+                    <div class="header__nav-btn btn">
+                        <a data-fancybox data-animation-duration="700" data-src="#animatedModal" class="header__btn-link btn-link" href="javascript:;">Связаться</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="menu-wrapper">
+            <div class="burger-menu"></div>
+        </div>
+    </header>
+
+    <div class="animated-modal" id="animatedModal">
+        <h3 class="animated-modal__title text-item">Введите имя и номер телефона</h3>
+        <form class="header__form" action="#">
+            <input class="header__form-name input-form" name="user_name" type="text" placeholder="Ваше имя*" required>
+            <input id="phone" class="header__form-phone input-form" name="user_phone" type="text" placeholder="Ваш номер телефона*" required>
+            <button class="header__form-btn btn-content" type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="progress"></div>
+
+    <section id="top" class="top">
+        <div class="container">
+            <div class="top__wrapper">
+                <div class="top__content">
+                    <p class="top__content-text text"><span>Студия дизайна</span> продукции из дерева</p>
+                    <h1 class="top__content-title title">LAGOM</h1>
+                    <div class="top__content-btn btn-content">
+                        <a class="top__content-btn-link" href="#categories">Посмотреть мебель</a>
+                    </div>
+                </div>
+                <div class="top__images">
+                    <img class="top__img" src="images/top.png" alt="top">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__top title__block">
+                    <div class="about__top-inner">
+                        <img class="title__block-icon" src="images/title-icon.svg" alt="title-icon">
+                        <p class="about__top-text title__block-text text"><span>Кто мы такие</span></p>
+                    </div>
+                    <span class="title__block-border"></span>
+                    <h2 class="about__top-title title__block-title title">О НАС</h2>
+                </div>
+                <div class="about__content">
+                    <div class="about__content-item">
+                        <div class="about__content-item--wrapper">
+                            <img class="about__content-item--img" src="images/about-1.png" alt="about">
+                        </div>
+                        <div class="about__content-item--inner">
+                            <p class="about__content-item--text text"><span>LAGOM - </span> это <span> студия дизайна современной продукции из дерева</span></p>
+                            <p class="about__content-item--text">воплощение ваших идей в мебели различных форм, размеров и цветов.</p>
+                        </div>
+                    </div>
+                    <div class="about__content-item">
+                        <div class="about__content-item--inner">
+                            <p class="about__content-item--text text">Мебель на заказ <span> специально для вас</span></p>
+                            <p class="about__content-item--text">Изготовление продукции из дерева для вашего дома и офиса.</p>
+                        </div>
+                        <img class="about__content-item--img" src="images/about-2.png" alt="about">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work">
+        <div class="container">
+            <div class="work__wrapper">
+                <div class="about__top title__block">
+                    <div class="about__top-inner">
+                        <img class="title__block-icon" src="images/title-icon.svg" alt="title-icon">
+                        <p class="about__top-text title__block-text text"><span>Как заказать</span></p>
+                    </div>
+                    <span class="title__block-border"></span>
+                    <h2 class="about__top-title title__block-title title">НАША РАБОТА</h2>
+                </div>
+                <ol class="work__items">
+                    <li class="work__item">
+                        <img class="work__item-img" src="images/work-1.svg" alt="work">
+                        <h3 class="work__item-title text-item">Дизайн</h3>
+                    </li>
+                    <li class="work__item">
+                        <img class="work__item-img" src="images/work-2.svg" alt="work">
+                        <h3 class="work__item-title text-item">Замеры</h3>
+                    </li>
+                    <li class="work__item">
+                        <img class="work__item-img" src="images/work-3.svg" alt="work">
+                        <h3 class="work__item-title text-item">Бюджет</h3>
+                    </li>
+                    <li class="work__item">
+                        <img class="work_item-img" src="images/work-4.svg" alt="work">
+                        <h3 class="work__item-title text-item">Производство</h3>
+                    </li>
+                </ol>
+                <div class="top__content-btn btn-content work__btn">
+                    <a class="top__content-btn-link" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Сделать заказ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="about__top title__block">
+                <div class="about__top-inner">
+                    <img class="title__block-icon" src="images/title-icon.svg" alt="title-icon">
+                    <p class="about__top-text title__block-text text"><span>Что мы изготовляем</span></p>
+                </div>
+                <span class="title__block-border"></span>
+                <h2 class="about__top-title title__block-title title">КАТЕГОРИИ</h2>
+            </div>
+            <div class="categories__items">
+                <div class="categories__item elements-1" style="justify-content: flex-start;">
+                    <h3 class="categories__item-title text-item">Столы</h3>
+                    <img class="categories__item-img" src="images/categories-1.png" alt="categories">
+                    <div class="header__nav-btn btn categories__btn">
+                        <a class="header__btn-link btn-link" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Заказать</a>
+                    </div>
+                </div>
+                <div class="categories__item elements-2">
+                    <h3 class="categories__item-title text-item">Стулья</h3>
+                    <img class="categories__item-img" src="images/categories-2.png" alt="categories">
+                    <div class="header__nav-btn btn categories__btn">
+                        <a class="header__btn-link btn-link" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Заказать</a>
+                    </div>
+                </div>
+                <div class="categories__item elements-3">
+                    <h3 class="categories__item-title text-item">Посуда</h3>
+                    <img class="categories__item-img" src="images/categories-3.png" alt="categories">
+                    <div class="header__nav-btn btn categories__btn">
+                        <a class="header__btn-link btn-link" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Заказать</a>
+                    </div>
+                </div>
+                <div class="categories__item elements-1">
+                    <h3 class="categories__item-title text-item">Шкафы</h3>
+                    <img class="categories__item-img" src="images/categories-4.png" alt="categories">
+                    <div class="header__nav-btn btn categories__btn">
+                        <a class="header__btn-link btn-link" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Заказать</a>
+                    </div>
+                </div>
+                <div class="categories__item elements-2">
+                    <h3 class="categories__item-title text-item">Электроника</h3>
+                    <img class="categories__item-img" src="images/categories-5.png" alt="categories">
+                    <div class="header__nav-btn btn categories__btn">
+                        <a class="header__btn-link btn-link" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="button-up">
+        <div class="arrow"></div>
+    </div>
+
+    <section id="test" class="test">
+        <div class="container">
+            <div class="about__top title__block">
+                <div class="about__top-inner">
+                    <img class="title__block-icon" src="images/title-icon.svg" alt="title-icon">
+                    <p class="about__top-text title__block-text text"><span>Что о нас говорят</span></p>
+                </div>
+                <span class="title__block-border"></span>
+                <h2 class="about__top-title title__block-title title">ОТЗЫВЫ</h2>
+            </div>
+            <div class="test__wrapper">
+                <div class="test__inner">
+                    <div class="test__picture" style="background-image: url(images/test-picture-1.jpg);"></div>
+                    <div class="test__picture" style="background-image: url(images/test-picture-2.jpg);"></div>
+                </div>
+                <div class="test__items test__slider">
+                    <div class="test__item">
+                        <img class="test__item-img" src="images/stars.png" alt="stars">
+                        <p class="test__item-text">Мы оформили заказ в конце ноября перед Новым годом, очень хотелось успеть обновиться до праздников. Ура! Успели! Спасибо за это LAGOM! Мы рассматривали в частности домашнюю мебель, нам нужны были столы, стулья и шкафы. Нам осталось подобрать спальню и установить зеркала по дому. Было также приятно получить шоколадку с просьбой оставить отзыв. Оставляем, заслужили! Ждите нас за спальней и зеркалами!</p>
+                        <div class="test__item-autor">
+                            <img class="test__item-autor--img" src="images/autor.jpg" alt="autor">
+                            <p class="test__item-autor--name">Ольга Пац <span>Полтава, Украина</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="test__item">
+                        <img class="test__item-img" src="images/stars.png" alt="stars">
+                        <p class="test__item-text">My experience with LAGOM is a complete success, from customed furniture, range of product, modern design, purchasing experience, the delivery and newsletter. Litterally everything is great. Thank you!</p>
+                        <div class="test__item-autor">
+                            <img class="test__item-autor--img" src="images/autor-2.jpg" alt="autor">
+                            <p class="test__item-autor--name">Виктор Кислый <span>Милан, Италия</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="test__item">
+                        <img class="test__item-img" src="images/stars.png" alt="stars">
+                        <p class="test__item-text">LAGOM, мы в восторге, просто нет слов! Цены конечно самые приятные! Невероятный ассортимент, очень все дешево, это как фикс прайс для продукции из дерева. В целом готовы только нахваливать, мы не думали что уложимся. наполнили весь дом мебелью! Однозначно рекомендуем тем, у кого ограничен бюджет и желает качество на уровне хорошо. Здесь уровень хорошо, если учитывать цены то вообще отлично! Наша хорошая рекомендация!</p>
+                        <div class="test__item-autor">
+                            <img class="test__item-autor--img" src="images/autor-3.jpg" alt="autor">
+                            <p class="test__item-autor--name">Юлия Шеховцова <span>Запорожье, Украина</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="test__item">
+                        <img class="test__item-img" src="images/stars.png" alt="stars">
+                        <p class="test__item-text">Очень понравилось обращение сотрудников фирмы с клиентами я давно не встречала такого хорошего отношения. Ни нервов никаких, все выслушали посоветовали что нужно хотя я и отняла не один час наверное со своими расспросами. Особенно долго не могла понять что выбрать для фасадов ПВХ или МДФ да и со столешницами тоже была проблема. Мне подробно разъяснили и я остановилась на Валерии, выбрала вариант который нормальный по долговечности и при этом цена чтобы не кусалась очень. И по цвету и дизайну все так как и представляла, олицетворение моей идеальной кухни. Так что спасибо большое LAGOM!</p>
+                        <div class="test__item-autor">
+                            <img class="test__item-autor--img" src="images/autor-4.jpg" alt="autor">
+                            <p class="test__item-autor--name">Александра Иванова <span>Киев, Украина</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sub">
+        <div class="container">
+            <div class="sub__wrapper">
+                <div class="sub__text">
+                    <h3 class="sub__text-title">Подпишитесь на свежие новости</h3>
+                    <p class="sub__text-text">Ежемесячный дайджест новой продукции, горячих предложений и промоакций LAGOM.</p>
+                </div>
+                <form class="sub__form" action="#" method="post">
+                    <input class="sub__form-input input-form" type="text" name="user_email" placeholder="Введите Ваш email" required>
+                    <button class="sub__form-btn btn-content" type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__nav">
+                <div class="footer__nav-items">
+                    <div class="footer__nav-item">
+                        <div class="footer__nav-item--logo header__logo">
+                            <a class="footer__nav-item--logo-link header__logo-link" href="#">
+                                <img class="footer__nav-item--img header__logo-img" src="images/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <a class="footer__nav-item--tel" href="tel:+0663105212">(066) 310-52-12</a>
+                        <a class="footer__nav-item--mail" href="mailto:woodies@gmail.com">lagom@gmail.com</a>
+                        <p class="footer__nav-item--text">Харьков, Украина</p>
+                    </div>
+                    <div class="footer__nav-item">
+                        <h3 class="footer__nav-item--title">Продукция</h3>
+                        <a class="footer__nav-item--link" href="#categories">Мебель</a>
+                        <a class="footer__nav-item--link" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Заказать</a>
+                        <a class="footer__nav-item--link" href="#work">Услуги</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <h3 class="footer__nav-item--title">Дополнительно</h3>
+                        <a class="footer__nav-item--link" href="#top">Блог</a>
+                        <a class="footer__nav-item--link" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Помощь</a>
+                        <a class="footer__nav-item--link" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Контакты</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <h3 class="footer__nav-item--title">Компания</h3>
+                        <a class="footer__nav-item--link" href="#about">О Нас</a>
+                        <a class="footer__nav-item--link" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Вакансии</a>
+                        <a class="footer__nav-item--link" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Команда</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <h3 class="footer__nav-item--title">Подписаться</h3>
+                        <a class="footer__nav-item--link" target="blank" href="https://facebook.com">Facebook</a>
+                        <a class="footer__nav-item--link" target="blank" href="https://www.instagram.com">Instagram</a>
+                        <a class="footer__nav-item--link" target="blank" href="https://twitter.com">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copy">© 2021 LAGOM</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-input-mask-phone-number.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
